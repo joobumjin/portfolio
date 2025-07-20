@@ -7,6 +7,7 @@ import Grid from '@mui/material/Unstable_Grid2';
 interface LabelValue {
     label: string;
     value: string;
+    id: number;
 }
 
 type Descriptors = LabelValue[]
@@ -38,7 +39,7 @@ function WorkLayout({
       />
       <Grid container rowSpacing={3} className = {workStyles.details} style={{width: "80%"}} justifyContent="space-between" >
         {details.map((detail : LabelValue) => 
-          <Grid xs={12} sm={6} md={3}>
+          <Grid xs={12} sm={6} md={3} key={detail.id}>
             <h2>{detail.label}</h2>
             <p>{detail.value}</p>
           </Grid>

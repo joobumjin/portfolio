@@ -1,14 +1,14 @@
 // import Image from "next/image";
 // import styles from "../page.module.css";
-import WorkLayout from "../components/workPage";
+import {WorkLayout} from "../components/workPage";
 import workStyles from "../components/work.module.css"
 
 export default function MMHIC() {
     let mmhicdets = [
-        {label: "Role", value: "Student"},
-        {label: "Timeline", value: "Fall '24"},
-        {label: "Class", value: "Deep Learning in Genomics"},
-        {label: "Skills Used", value: "Deep Learning in Genomics"}
+        {label: "Role", value: "Student", id: 1},
+        {label: "Timeline", value: "Fall '24", id: 2},
+        {label: "Class", value: "Deep Learning in Genomics", id: 3},
+        {label: "Skills Used", value: "Deep Learning in Genomics", id: 4}
     ]
     return (
         <WorkLayout 

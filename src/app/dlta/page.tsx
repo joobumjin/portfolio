@@ -1,11 +1,11 @@
 import Image from "next/image";
 import styles from "../page.module.css";
-import WorkLayout from "../components/workPage";
+import {WorkLayout} from "../components/workPage";
 
 export default function DLTA() {
     let dets = [
-        {label: "Role", value: "Undergraduate Teaching Assistant"},
-        {label: "Timeline", value: "May '22 - Present"}
+        {label: "Role", value: "Undergraduate Teaching Assistant", id: 1},
+        {label: "Timeline", value: "May '22 - Present", id: 2}
     ]
     return (
         <WorkLayout 

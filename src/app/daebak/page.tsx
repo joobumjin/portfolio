@@ -5,10 +5,10 @@ import workStyles from "../components/work.module.css"
 
 export default function DAEBAK() {
     let daebakdets = [
-        {label: "Role", value: "Vice Director, Performer"},
-        {label: "Timeline", value: "Fall '21 - Spring '25"},
-        {label: "Location", value: "Brown University"},
-        {label: "Skills", value: "Management of Logisitcs and Members, Spreadsheets"}
+        {label: "Role", value: "Vice Director, Performer", id: 1},
+        {label: "Timeline", value: "Fall '21 - Spring '25", id: 2},
+        {label: "Location", value: "Brown University", id: 3},
+        {label: "Skills", value: "Management of Logisitcs and Members, Spreadsheets", id: 4}
     ]
     return (
         <WorkLayout 
@@ -22,7 +22,7 @@ export default function DAEBAK() {
                     Overview
                 </h1>
                 <p className={workStyles.sectionText}>
-                    DAEBAK is Brown University and Rhode Island School of Design's Kpop dance team! 
+                    {`DAEBAK is Brown University and Rhode Island School of Design's Kpop dance team! `}
                 </p>
 
                 <p className={workStyles.sectionText}>    
@@ -50,9 +50,9 @@ export default function DAEBAK() {
                 </p>
 
                 <p className={workStyles.sectionText}>
-                    To book rooms and spaces, I first needed to ensure that all my requests complied with Brown's Student Activities Office's regulations and prerequisites, as outlined through their handbook. 
+                    {`To book rooms and spaces, I first needed to ensure that all my requests complied with Brown's Student Activities Office's regulations and prerequisites, as outlined through their handbook. 
 
-                    With rules and restrictions changing yearly, it was important that I stayed up to date with the documentation throughout the years, making sure to reference specific sections to make sure DAEBAK was using the right tools in the right circumstances.
+                    With rules and restrictions changing yearly, it was important that I stayed up to date with the documentation throughout the years, making sure to reference specific sections to make sure DAEBAK was using the right tools in the right circumstances.`}
                 </p>
 
                 <p className={workStyles.sectionText}>

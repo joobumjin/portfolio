@@ -13,13 +13,15 @@ export default function Home() {
       <div className={styles.center}>
         <div className={styles.mainSplit}>
           <div className={styles.intro}>
-            <p>Hi, I'm Bumjin</p>
+            <p>{`Hi, I'm Bumjin`}</p>
           </div>
           <div className={styles.desc}>
             <p>
-              I'm a Machine Learning Engineer studying Computer Science @ Brown University. 
-              I love learning from the world around me. 
-              While I'm not engineering, you can usually find me in the dance studio with my team.
+              {`
+                I'm a Machine Learning Engineer studying Computer Science @ Brown University. 
+                I love learning from the world around me. 
+                While I'm not engineering, you can usually find me in the dance studio with my team.
+              `}
             </p>
           </div>
         </div>
