@@ -7,7 +7,7 @@
     transition: background 200ms, border 200ms;
 }
 
-.button span {
+.button arrow {
     display: inline-block;
     transition: transform 200ms;
 }
