@@ -1,7 +1,6 @@
 .footer {
     width: 100%;
-    max-width: var(--max-width);
-    margin: auto;
+    padding: 0 6rem 0 6rem;
     margin-top: 2rem;
     margin-bottom: 4rem;
     display: flex;
@@ -12,7 +11,7 @@
 
 .inner {
     width: 100%;
-    max-width: var(--max-width);
+    max-width: var(--outer-elt-max-width);
     padding: 1rem;
     display: flex;
     flex-direction: column;
@@ -50,5 +49,15 @@
 
     .card:hover span {
         transform: translateX(4px);
+    }
+}
+@media (max-width: 700px) {
+    .inner b {
+        padding-bottom: .75rem;
+        text-align: center;
+    }
+    .lastline {
+        flex-direction: column;
+        align-items: center;
     }
 }

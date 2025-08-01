@@ -19,7 +19,7 @@
   justify-content: inherit;
   align-items: inherit;
   font-size: 1.25rem;
-  max-width: var(--max-width);
+  max-width: var(--outer-elt-max-width);
   width: 100%;
   font-family: var(--font-opensans);
   
@@ -193,7 +193,6 @@
 
   .grid {
     grid-template-columns: 1fr;
-    margin-bottom: 120px;
     max-width: 320px;
     text-align: center;
   }
