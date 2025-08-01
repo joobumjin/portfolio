@@ -92,10 +92,36 @@ export default function DAEBAK() {
                 <CaptionedImage 
                     img_src="/sample_sched.png"
                     img_alt="Example Schedule Generated Through Google Form Responses and Sheets Code"
-                    caption="asdf"
+                    caption="A sample spreadsheet that shows which members are unavailable during our practice times. Names were automatically gathered and organized from Google Form respones."
                 />
 
+                <p className={workStyles.sectionText}>
+                    Schedules like the one above were used on a near daily basis to schedule practices and performances, and I ended up creating around 15 such schedules throughout just 10 months!
+                </p>
+
+
             </span>  
+
+            <span className={workStyles.section}>
+                <h1 className={workStyles.sectionHeader}>
+                    The DAEBAK Communtiy
+                </h1>
+                <p className={workStyles.sectionText}>
+                    Every weekend, DAEBAK performance team members would host one or two dance workshops open to the public. 
+                    Throughout these workshops, teachers would demo and teach selected sections of choreography for 2 hours. 
+                </p>
+                <p className={workStyles.sectionText}>
+                    Having now hosted these workshops countless times, it has been so fun and rewarding to dance with so many different people.
+                </p>
+                <p className={workStyles.sectionText}>
+                    I have also learned invaluable gems about learning and teaching.
+                    // give example 
+                </p>
+                <p className={workStyles.sectionText}>
+                    And though the size of our performance team was limited by logistics constraints, the broader DAEBAK community always came out to support us through pop events, guest performances, and our very own 2-hour showcase called the Spring Show.
+                </p>
+            </span>  
+
             
 
             <span className={workStyles.section}>

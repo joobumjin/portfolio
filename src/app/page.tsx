@@ -5,9 +5,7 @@ export default function Home() {
   return (
     <main className={styles.main}>
       <div className={styles.description}>
-        <p>
-          Bumjin Joo
-        </p>
+        <p>Bumjin Joo</p>
       </div>
 
       <div className={styles.center}>
@@ -18,7 +16,7 @@ export default function Home() {
           <div className={styles.desc}>
             <p>
               {`
-                I'm a Machine Learning Engineer studying Computer Science @ Brown University. 
+                I'm a Machine Learning Engineer working towards an MSc in @ Brown CS. 
                 I love learning from the world around me. 
                 While I'm not engineering, you can usually find me in the dance studio with my team.
               `}

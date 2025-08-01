@@ -45,9 +45,17 @@
     }
     .caption {
         text-align: center;
+        padding: 0 0 2rem 0;
     }
 }
 
 .articleBody {
     width: 80%
+}
+
+@media (max-width: 700px) {
+    .headerImg {
+        width: 100%;
+        padding: 1rem;
+    }
 }
