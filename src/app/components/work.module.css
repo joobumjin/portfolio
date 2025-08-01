@@ -10,7 +10,8 @@
 }
 
 .headerImg {
-    width: 60%;
+    width: 90%;
+    /* width: 60%; */
     height: auto;
     padding: 2rem 0 2rem 0;
 }
@@ -36,9 +37,14 @@
 .imgSection {
     position: relative;
     width: 100%;
-    max-width: var(--max-width);
+    max-width: var(--outer-elt-max-width);
     height: auto;
     .bodyImg {
+        width: 100%; 
+        height: auto;
+        padding: 2rem 0 0 0;
+    }
+    .bodyVid {
         width: 100%; 
         height: auto;
         padding: 2rem 0 0 0;
@@ -46,6 +52,7 @@
     .caption {
         text-align: center;
         padding: 0 0 2rem 0;
+        font-weight: 300;
     }
 }
 

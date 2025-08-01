@@ -76,4 +76,25 @@ function CaptionedImage({
   );
 }
 
-export { WorkLayout, CaptionedImage }
+function Video({
+  vid_src,
+  vid_alt,
+}: Readonly<{
+  vid_src: string;
+  vid_alt: string;
+}>) {
+  return (
+    <span className={workStyles.imgSection}>
+        <iframe
+            src={vid_src}
+            // width={}
+            // height={400}
+            title={vid_alt}
+            className={workStyles.bodyVid}
+            allowFullScreen
+        />
+    </span>
+  );
+}
+
+export { WorkLayout, CaptionedImage, Video }

@@ -1,6 +1,6 @@
 import Image from "next/image";
 // import styles from "../page.module.css";
-import {WorkLayout, CaptionedImage} from "../components/workPage";
+import {WorkLayout, CaptionedImage, Video} from "../components/workPage";
 import workStyles from "../components/work.module.css"
 
 export default function DAEBAK() {
@@ -13,7 +13,7 @@ export default function DAEBAK() {
     return (
         <WorkLayout 
             title="DAEBAK Dance Team"
-            img_src="/daebaklogo.jpg"
+            img_src="/daebaklogo_wide.jpg"
             img_alt="DAEBAK Logo Projection"
             details={daebakdets}
         >
@@ -120,6 +120,11 @@ export default function DAEBAK() {
                 <p className={workStyles.sectionText}>
                     And though the size of our performance team was limited by logistics constraints, the broader DAEBAK community always came out to support us through pop events, guest performances, and our very own 2-hour showcase called the Spring Show.
                 </p>
+
+                <Video 
+                    vid_src="https://www.youtube.com/watch?v=XK6OhebFJ5k&list=PL5gZzQCnHAxHn6H6bmpQMIhFfGquDgnBo"
+                    vid_alt="asdf"
+                />
             </span>  
 
             

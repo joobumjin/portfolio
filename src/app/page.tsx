@@ -17,7 +17,7 @@ export default function Home() {
             <p>
               {`
                 I'm a Machine Learning Engineer working towards an MSc in @ Brown CS. 
-                I love learning from the world around me. 
+                I love learning about how machines... learn!
                 While I'm not engineering, you can usually find me in the dance studio with my team.
               `}
             </p>
