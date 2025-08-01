@@ -46,7 +46,8 @@
     }
     .bodyVid {
         width: 100%; 
-        height: auto;
+        height: 599px;
+        border: none;
         padding: 2rem 0 0 0;
     }
     .caption {

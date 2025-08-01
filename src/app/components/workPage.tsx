@@ -87,8 +87,6 @@ function Video({
     <span className={workStyles.imgSection}>
         <iframe
             src={vid_src}
-            // width={}
-            // height={400}
             title={vid_alt}
             className={workStyles.bodyVid}
             allowFullScreen

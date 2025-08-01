@@ -122,7 +122,7 @@ export default function DAEBAK() {
                 </p>
 
                 <Video 
-                    vid_src="https://www.youtube.com/watch?v=XK6OhebFJ5k&list=PL5gZzQCnHAxHn6H6bmpQMIhFfGquDgnBo"
+                    vid_src="https://www.youtube.com/embed/XK6OhebFJ5k"
                     vid_alt="asdf"
                 />
             </span>  
