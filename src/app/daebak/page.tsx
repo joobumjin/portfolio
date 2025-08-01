@@ -113,10 +113,10 @@ export default function DAEBAK() {
                 <p className={workStyles.sectionText}>
                     Having now hosted these workshops countless times, it has been so fun and rewarding to dance with so many different people.
                 </p>
-                <p className={workStyles.sectionText}>
+                {/* <p className={workStyles.sectionText}>
                     I have also learned invaluable gems about learning and teaching.
-                    // give example 
-                </p>
+                    ... give example 
+                </p> */}
                 <p className={workStyles.sectionText}>
                     And though the size of our performance team was limited by logistics constraints, the broader DAEBAK community always came out to support us through pop events, guest performances, and our very own 2-hour showcase called the Spring Show.
                 </p>
