@@ -45,7 +45,6 @@
   justify-content: space-evenly;
   align-items: center;
   gap: 0.5rem;
-
 }
 
 .intro { 
@@ -206,7 +205,7 @@
   }
 
   .center {
-    padding: 8rem 0 6rem;
+    padding: 3rem 0 6rem;
   }
 
   .center::before {

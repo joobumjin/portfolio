@@ -30,6 +30,7 @@
 
 .lastline p {
     align-items: center;
+    width: auto;
 }
 
 .card {
@@ -52,6 +53,9 @@
     }
 }
 @media (max-width: 700px) {
+    .footer {
+        padding: 0;
+    }
     .inner b {
         padding-bottom: .75rem;
         text-align: center;
