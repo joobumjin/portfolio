@@ -8,7 +8,7 @@ export default function DAEBAK() {
         {label: "Role", value: "Vice Director, Performer", id: 1},
         {label: "Timeline", value: "Fall '21 - Spring '25", id: 2},
         {label: "Location", value: "Brown University", id: 3},
-        {label: "Skills", value: "Management of Logisitcs and Members, Spreadsheets", id: 4}
+        {label: "Skills", value: "Management of Logisitcs and Members, Spreadsheets, RegEx, Python, Pandas, NumPy", id: 4}
     ]
     return (
         <WorkLayout 
@@ -83,6 +83,8 @@ export default function DAEBAK() {
                     In order to organize and aggregate these form responses, I often used extensive code and functions in Google Sheets.
 
                     I became very familiar with tools like mapping, filtering, querying, RegEx matching, and conditional formatting as I manipulated arrays and tables full of text, numbers, and dates.
+
+                    Check out a small sample of the work I did <a className={workStyles.inlineLink} href="https://drive.google.com/drive/folders/1sDu__-1lZsyLlKTf1YJlNAE49XaZiFq9?usp=sharing">here!</a>
                 </p>
 
                 <p className={workStyles.sectionText}>
@@ -99,6 +101,11 @@ export default function DAEBAK() {
                     Schedules like the one above were used on a near daily basis to schedule practices and performances, and I ended up creating around 15 such schedules throughout just 10 months!
                 </p>
 
+                <p className={workStyles.sectionText}>
+                    Since then, I have gone on to reimplement my code in Google Colab using Python, Pandas, and NumPy to execute more complex matrix operations and SQL-esque queries with better execution time.
+                    
+                    This has come at the cost of Google Drive's real-time updating, but the considerably more resilliant, fast, and durable processes are arguably more important when working data as important as scheduling availability.
+                </p>
 
             </span>  
 
@@ -107,7 +114,7 @@ export default function DAEBAK() {
                     The DAEBAK Communtiy
                 </h1>
                 <p className={workStyles.sectionText}>
-                    Every weekend, DAEBAK performance team members would host one or two dance workshops open to the public. 
+                    Every weekend, DAEBAK performance team members would also host one or two dance workshops open to the public. 
                     Throughout these workshops, teachers would demo and teach selected sections of choreography for 2 hours. 
                 </p>
                 <p className={workStyles.sectionText}>
@@ -118,7 +125,7 @@ export default function DAEBAK() {
                     ... give example 
                 </p> */}
                 <p className={workStyles.sectionText}>
-                    And though the size of our performance team was limited by logistics constraints, the broader DAEBAK community always came out to support us through pop events, guest performances, and our very own 2-hour showcase called the Spring Show.
+                    And though the size of our performance team was limited by logistics constraints, the broader DAEBAK community always came out to support us through pop events, guest performances, and our very own 2-hour showcase called the Spring Show. Check out a set from 2025's Spring Show below!
                 </p>
 
                 <Video 
@@ -127,7 +134,7 @@ export default function DAEBAK() {
                 />
             </span>  
 
-            
+{/*             
 
             <span className={workStyles.section}>
                 <h1 className={workStyles.sectionHeader}>
@@ -137,7 +144,7 @@ export default function DAEBAK() {
                 <p className={workStyles.sectionText}>
 
                 </p>
-            </span>                      
+            </span>                       */}
 
         </WorkLayout>
     );

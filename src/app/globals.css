@@ -56,13 +56,10 @@
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --foreground-rgb: 255, 255, 255;
+    --foreground-rgb: 210, 210, 210;
     --background-start-rgb: 0, 0, 0;
     --background-end-rgb: 0, 0, 0;
 
-    /* --background-right-edge: 59,59,59;
-    --background-left-edge: 0, 2, 21;
-    --background-center: 0,128,128; */
     --background-right-edge: 59,59,59;
     --background-left-edge: 0, 2, 21;
     --background-center: 0, 0, 0;

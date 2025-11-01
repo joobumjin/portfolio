@@ -31,6 +31,9 @@
     .sectionText {
         line-height: 1.5rem;
         margin-bottom: .75rem;
+        .inlineLink {
+            text-decoration: underline;
+        }
     }
 }
 
