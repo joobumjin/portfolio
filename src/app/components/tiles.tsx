@@ -111,8 +111,8 @@ function IconHyperLink({
       target="_blank"
       className={tileStyles.hypertext}
     >
-      <Stack direction="row" alignItems="center" spacing={1}>
-        {text} <span className={tileStyles.svg}>{icon}</span>
+      <Stack direction="row" alignItems="center" spacing={1} sx={{marginBottom: '.2em'}}>
+        {text} {icon}
       </Stack>
     </a>
   )
