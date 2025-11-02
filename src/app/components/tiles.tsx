@@ -82,7 +82,7 @@ function HyperLink({
   href: string;
 }>) {
   return (
-    <span style={{display: 'inline-block'}}>
+    <span style={{display: 'inline-block', whiteSpace: 'initial'}}>
       <a
         href={href}
         target="_blank"
