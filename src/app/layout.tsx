@@ -14,7 +14,7 @@ const opensans = Open_Sans({
 });
 
 export const metadata: Metadata = {
-  title: "Bumjin Joo | Portfolio",
+  title: "bumjinjoo.com",
   // description: "",
 };
 
