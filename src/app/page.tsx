@@ -18,7 +18,7 @@ export default function Home() {
 
       <div className={styles.center}>
         <Stack direction = 'column'
-              spacing={{sm: 4, md: 2}} 
+              spacing={{xs: 4, sm: 4, md: 2}} 
               sx={{
                     justifyContent: "center",
                     alignItems: "center",
@@ -39,8 +39,8 @@ export default function Home() {
           </div>
 
           <Grid container
-                rowSpacing={{xs: 0, sm: 4, md: 6}}
-                columnSpacing={{xs:0, sm: 0, md: 6}}
+                rowSpacing={{xs: 8, sm: 4}}
+                columnSpacing={{xs:2, sm: 0, md: 6}}
                 columns = {{xs: 2, sm: 2, md: 4}}
                 sx={{
                   justifyContent: "center",
@@ -164,7 +164,7 @@ export default function Home() {
       <h1 className={styles.sectionHeader}>projects</h1>
       <ProjTile
         name="GraphSC"
-        ext={<Stack direction={{ xs: 'column', sm: 'row' }} alignItems="end" spacing={0}>
+        ext={<Stack direction={{ xs: 'column', sm: 'row' }} alignItems={{xs: "center", sm: "end"}} spacing={0}>
                 <ReportLink href="https://drive.google.com/file/u/1/d/1-m_HFV6-Dp_7ZMAOASNqEYBrU09KBUT2/view?usp=sharing"/>
                 <GithubProjLink href="https://github.com/joobumjin/GraphSC" />
              </Stack>}
@@ -178,7 +178,7 @@ export default function Home() {
 
       <ProjTile
         name="YogaSplat"
-        ext={<Stack direction={{ xs: 'column', sm: 'row' }} alignItems="end" spacing={0}>
+        ext={<Stack direction={{ xs: 'column', sm: 'row' }} alignItems={{xs: "center", sm: "end"}} spacing={0}>
                 <ReportLink href="https://drive.google.com/file/d/15dR2u52O0wm3t0_ctjyrHtfP4D6_ozk1/view?usp=sharing" />
                 <GithubProjLink href="https://github.com/mindy-kim/3d-world-models"/>
              </Stack>}
@@ -191,7 +191,7 @@ export default function Home() {
 
       <ProjTile
         name="MAE Fine Tuning"
-        ext={<Stack direction={{ xs: 'column', sm: 'row' }} alignItems="end" spacing={0}>
+        ext={<Stack direction={{ xs: 'column', sm: 'row' }} alignItems={{xs: "center", sm: "end"}} spacing={0}>
                 <a className={styles.button}><TextSnippetIcon/> <p>Report</p></a>
                 <GithubProjLink href="https://github.com/joobumjin/mae_cs2952x"/>
              </Stack>}
@@ -207,7 +207,7 @@ export default function Home() {
 
       <ProjTile
         name="ImTex"
-        ext={<Stack direction={{ xs: 'column', sm: 'row' }} alignItems="end" spacing={0}>
+        ext={<Stack direction={{ xs: 'column', sm: 'row' }} alignItems={{xs: "center", sm: "end"}} spacing={0}>
                 <ReportLink href="https://drive.google.com/file/d/16F2uisOPw3CV3Uyaqv39zMeTMSRBynEF/view?usp=sharing"/>
                 <DriveLink href="https://drive.google.com/drive/folders/1k2lMFOw1wFnflUApc26V-A7m1Kk2hrtG?usp=sharing"/>
              </Stack>}
@@ -222,7 +222,7 @@ export default function Home() {
 
       <ProjTile
         name="BertQA"
-        ext={<Stack direction={{ xs: 'column', sm: 'row' }} alignItems="end" spacing={0}>
+        ext={<Stack direction={{ xs: 'column', sm: 'row' }} alignItems={{xs: "center", sm: "end"}} spacing={0}>
                 <DriveLink href="https://drive.google.com/drive/folders/1k2lMFOw1wFnflUApc26V-A7m1Kk2hrtG?usp=sharing"/>
              </Stack>}
       >
@@ -236,7 +236,7 @@ export default function Home() {
       
       <ProjTile
         name="DAEBAK Dance Team"
-        ext={<Stack direction={{ xs: 'column', sm: 'row' }} alignItems="end" spacing={0}>
+        ext={<Stack direction={{ xs: 'column', sm: 'row' }} alignItems={{xs: "center", sm: "end"}} spacing={0}>
                 <a className={styles.button} href="https://drive.google.com/drive/folders/1sDu__-1lZsyLlKTf1YJlNAE49XaZiFq9?usp=sharing" target="_blank">
                   <AddToDriveIcon/> <p>Google Drive Sample</p>
                 </a>
