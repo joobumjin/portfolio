@@ -2,7 +2,8 @@
     margin: 2rem 0 2rem 0;
     padding: 3rem;
     /* transition: background 10s, border 200ms; */
-    width: 100%;
+    width: 75%;
+    min-width: 30rem;
     display: flex;
     flex-direction: column;
     /* backdrop-filter: blur(20px);
@@ -21,13 +22,6 @@
     transition: box-shadow .2s ease-in-out, width .2s ease; 
 }
 
-.tile:hover {
-    box-shadow: 0 13px 35px rgba(0, 0, 0, 0.17),
-                inset 0 1px 0 rgba(255, 255, 255, 0.2),
-                inset 0 -1px 0 rgba(255, 255, 255, 0.1),
-                inset 0 0 20px 10px rgba(255, 255, 255, .1);
-}
-
 .tile::after {
     content: '';
     position: absolute;
@@ -41,7 +35,6 @@
     filter: blur(1px) drop-shadow(10px 4px 6px black) brightness(115%);
 }
 
-
 .tile .split {
     width: 100%;
     display: flex;
@@ -53,6 +46,7 @@
     width: fit-content;
     display: block;
     position: relative;
+    white-space: nowrap;
 }    
 
 .hypertext:after {
@@ -66,11 +60,6 @@
     transition: .2s ease-in-out;
 }    
 
-.hypertext:hover:after {
-    width: 100%;
-    left: 0;
-}
-
 .button {
   padding: 1rem;
   border-radius: var(--border-radius);
@@ -82,11 +71,23 @@
 }
 
 .button p {
-  margin-left: .5rem;
+  margin-left: .5em;
 }
 
 /* Enable hover only on non-touch devices */
 @media (hover: hover) and (pointer: fine) {
+    .tile:hover {
+        box-shadow: 0 13px 35px rgba(0, 0, 0, 0.17),
+                    inset 0 1px 0 rgba(255, 255, 255, 0.2),
+                    inset 0 -1px 0 rgba(255, 255, 255, 0.1),
+                    inset 0 0 20px 10px rgba(255, 255, 255, .1);
+    }
+
+    .hypertext:hover:after {
+        width: 100%;
+        left: 0;
+    }
+
     .button:hover {
         background: rgba(var(--card-rgb), 0.1);
         border: 1px solid rgba(var(--card-border-rgb), 0.15);
@@ -95,6 +96,7 @@
     .button:hover span {
         transform: translateX(4px);
     }
+
 }
 
 
@@ -123,4 +125,11 @@
 
 .info i {
     width: fit-content;
+}
+
+/* Mobile */
+@media (max-width: 700px) {
+    .tile .split {
+        flex-direction: column;
+    }
 }

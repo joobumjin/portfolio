@@ -24,12 +24,14 @@ function ExpTile({
 }>) {
   return (
     <span className={tileStyles.tile}>
-      <span className={tileStyles.split}>
+      <Stack direction={{sm: 'column', md: 'row'}} justifyContent={{md: "space-between"}}>
         <span className={tileStyles.title}>
-            <HyperLink 
-              text=<h2>{org}</h2>
-              href={link}
-            />
+            <h2>
+              <HyperLink 
+                text={org}
+                href={link}
+              />
+            </h2>
 
           <h3>{position}</h3>
         </span>
@@ -38,7 +40,7 @@ function ExpTile({
           <i>{loc}</i>
           <i>{date}</i>
         </span>
-      </span>
+      </Stack>
 
       {children}
 
@@ -79,15 +81,17 @@ function HyperLink({
   href: string;
 }>) {
   return (
-    <a
-      href={href}
-      target="_blank"
-      className={tileStyles.hypertext}
-    >
-      <Stack direction="row" alignItems="center" spacing={1}>
-        {text} <LaunchIcon className={tileStyles.svg}/>
-      </Stack>
-    </a>
+    <span style={{display: 'inline-block'}}>
+      <a
+        href={href}
+        target="_blank"
+        className={tileStyles.hypertext}
+      >
+        <span style={{display: 'flex', flexDirection: 'row', alignItems: 'center'}}>
+          {text} <LaunchIcon fontSize="inherit" sx={{marginLeft: '.25em'}}/>
+        </span>
+      </a>
+    </span>
   )
 }
 

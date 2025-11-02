@@ -85,6 +85,28 @@ export default function Home() {
 
       <h1 className={styles.sectionHeader}>experience</h1>
         <ExpTile 
+          org="Radiology AI Lab - Rhode Island Hospital"
+          link="https://sites.brown.edu/airadiology/"
+          loc="Providence, RI"
+          position="Student Researcher"
+          date="Oct 2025 - Present"
+        >
+          <span className={styles.sub}>
+            <span>
+              <h4>Graduate Deep Learning</h4> <p>(Sept 2025 - )</p>
+            </span>
+            <ul>
+              <li>
+                utilized GitHub Actions to automatically verify internal code functionality on every update
+              </li>
+              <li>
+                helped students with transformers, autoencoders, diffusion, and more!
+              </li>
+            </ul>
+          </span>
+        </ExpTile>
+
+        <ExpTile 
           org="Brown CS "
           link="https://cs.brown.edu/"
           loc="Providence, RI"
@@ -192,7 +214,9 @@ export default function Home() {
              </Stack>}
       >
         <span className={styles.sub}>
-          <p>A graph-based approach to efficiently analyze stem cell imaging with state-of-the-art accuracy. Reduced training time from <b>days to just hours</b></p>
+          A mutlitaksing graph-based approach to automated stem cell characterization from microscope imaging with <b>a reduction in average squared error of over 50%</b> in each of 3 target variables when compared to previous state of the art models and modern ViT & Foundation Modeling-based approaches. 
+          The training time for the vision encoder was reduced from <b>days to just hours</b>.
+          The graph network further achieved rich embeddings, enabling transfer learning onto novel targets with just a linear probe.
         </span>
       </ProjTile>
 
@@ -204,8 +228,9 @@ export default function Home() {
              </Stack>}
       >
         <span className={styles.sub}>
-            <p>asdf</p>
-          </span>
+          A fast, action-conditioned novel-view generator for pre-existing videos, exploring extensions of 4D Gaussian Splats (4DGS). 
+          Designed to generalize 4D Gaussians beyond a single reference video, YogaSplat demonstrates the capability for 4DGS models to encode multiple actions for a single target subject without the need to retrain distinct models.
+        </span>
       </ProjTile>
 
       <ProjTile
@@ -216,15 +241,28 @@ export default function Home() {
              </Stack>}
       >
         <span className={styles.sub}>
-            <p>This project aimed to probe the Self Supervised Learning properties of a </p><HyperLink text={"Masked Autoencoder"} href="https://arxiv.org/abs/2111.06377"/>
+          An exploration into the Self Supervised Learning properties of the ViT-based <HyperLink text={"Masked Autoencoder"} href="https://arxiv.org/abs/2111.06377"/>. 
+          
+          ViTMAEs were pretrained to reconstruct unlabled, masked images and fine tuned by linear probing the encoder's embeddings on a classification task.
 
-            <p>
-            The training regime consisted of pretraining on unlabeled images and then training a linear probe on the pretrained visual encoder to evaluate the information contained within pretrained representations.
-
-            The MAE architecture is focused on learning to reconstruct images, given a partially masked out version of those images, using an autoencoder model. Below are two different reconstructions, one from the train split and one from the test split.
-            </p>
-          </span>
+          Ablation studies into training techniques like mean pooling encodings in lieu of directly accessing the classification encoding, linear probe intitialization, choice of optimizer, learning rate decay method, and batch normalization demonstrated the relevance or lack of impact from such techniques.
+        </span>
       </ProjTile>
+
+      <ProjTile
+        name="ImTex"
+        ext={<Stack direction={{ xs: 'column', sm: 'row' }} alignItems="end" spacing={0}>
+                <ReportLink href="https://drive.google.com/file/d/16F2uisOPw3CV3Uyaqv39zMeTMSRBynEF/view?usp=sharing"/>
+                <DriveLink href="https://drive.google.com/drive/folders/1k2lMFOw1wFnflUApc26V-A7m1Kk2hrtG?usp=sharing"/>
+             </Stack>}
+      >
+        <span className={styles.sub}>
+          A from-scratch language model for converting images of math formulas to their associated LaTeX code. 
+          Given a screenshot of a formula, the image encoder - transformer decoder model predicts out a LaTeX formula. 
+          Certainly not perfect, but still decoded LaTeX-parsable code quite close to ground truth.
+        </span>
+      </ProjTile>
+
 
       <ProjTile
         name="BertQA"
@@ -233,8 +271,9 @@ export default function Home() {
              </Stack>}
       >
         <span className={styles.sub}>
-            <p>asdf</p>
-          </span>
+          A repurposed autoregressive language model trained to highlight answers to questions in a body of text. 
+          Achieved 89% precision, recall, and f1 score in <b>a span of hours</b> when fine-tuning a general next-token BERT model on the <HyperLink text="SQuAD 2.0 dataset " href="https://rajpurkar.github.io/SQuAD-explorer/"/>.
+        </span>
       </ProjTile>
 
       <h1 className={styles.sectionHeader}>community involvement</h1>
