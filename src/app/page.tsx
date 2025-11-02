@@ -27,6 +27,7 @@ export default function Home() {
           <div className={styles.intro}>
             <p>{`hi, i'm Bumjin`}</p>
           </div>
+
           <div className={styles.desc}>
             <p>
               {`
@@ -36,45 +37,27 @@ export default function Home() {
               `}
             </p>
           </div>
+
           <Grid container
                 rowSpacing={{sm: 4, md: 6}}
                 columnSpacing={{sm: 0, md: 6}}
                 columns = {{sm: 2, md: 4}}
                 sx={{
-                  justifyItems: "center",
+                  justifyContent: "center",
                   alignItems: "center",
+                  width: '75%'
                 }}
           >
-            <Grid size={1}
-                  sx={{
-                    justifyItems: "center",
-                    alignItems: "center",
-                  }}
-            >
+            <Grid size={1} display="flex" justifyContent="center">
               <IconHyperLink text={<p>Github</p>} href="https://github.com/joobumjin" icon={<GitHubIcon />} />
             </Grid>
-            <Grid size={1}
-                  sx={{
-                    justifyItems: "center",
-                    alignItems: "center",
-                  }}
-            >
+            <Grid size={1} display="flex" justifyContent="center">
               <IconHyperLink text={<p>LinkedIn</p>} href="https://www.linkedin.com/in/bumjin-joo/" icon={<LinkedInIcon />}/>
             </Grid>
-            <Grid size={1}
-                  sx={{
-                    justifyItems: "center",
-                    alignItems: "center",
-                  }}
-            >
+            <Grid size={1} display="flex" justifyContent="center">
               <IconHyperLink text={<p>Resume</p>} href="https://drive.google.com/file/d/1GAxWJjdiknoXumj8lszhXeW0Kbf0XgwE/view?usp=sharing" icon={<TextSnippetIcon />}/>
             </Grid>
-            <Grid size={1}
-                  sx={{
-                    justifyItems: "center",
-                    alignItems: "center",
-                  }}
-            >
+            <Grid size={1} display="flex" justifyContent="center">
               <IconHyperLink text={<p>Email</p>} href="mailto:bumjin.joo@gmail.com" icon={<EmailIcon />}/>
             </Grid>
           </Grid>
