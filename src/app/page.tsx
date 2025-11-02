@@ -18,7 +18,7 @@ export default function Home() {
 
       <div className={styles.center}>
         <Stack direction = 'column'
-              spacing={2} 
+              spacing={{sm: 4, md: 2}} 
               sx={{
                     justifyContent: "center",
                     alignItems: "center",
