@@ -1,11 +1,15 @@
 import Image from "next/image";
 import styles from "./page.module.css";
 import Stack from '@mui/material/Stack';
+import Grid from '@mui/material/Grid';
 import LaunchIcon from '@mui/icons-material/Launch';
-import GitHubIcon from '@mui/icons-material/GitHub';
 import AddToDriveIcon from '@mui/icons-material/AddToDrive';
 import TextSnippetIcon from '@mui/icons-material/TextSnippet';
-import {ExpTile, ProjTile, HyperLink} from './components/tiles'
+import EmailIcon from '@mui/icons-material/Email';
+import LinkedInIcon from '@mui/icons-material/LinkedIn';
+import GitHubIcon from '@mui/icons-material/GitHub';
+import {ExpTile, ProjTile, HyperLink, IconHyperLink, TextButtonLink, 
+  GithubProjLink, ReportLink, DriveLink} from './components/tiles'
 
 export default function Home() {
   return (
@@ -15,9 +19,15 @@ export default function Home() {
       </div>
 
       <div className={styles.center}>
-        <div className={styles.mainSplit}>
+        <Stack direction = 'column'
+              spacing={2} 
+              sx={{
+                    justifyContent: "center",
+                    alignItems: "center",
+                  }}
+        >
           <div className={styles.intro}>
-            <p>{`Hi, I'm Bumjin`}</p>
+            <p>{`hi, i'm Bumjin`}</p>
           </div>
           <div className={styles.desc}>
             <p>
@@ -28,7 +38,49 @@ export default function Home() {
               `}
             </p>
           </div>
-        </div>
+          <Grid container
+                rowSpacing={{sm: 4, md: 6}}
+                columnSpacing={{sm: 0, md: 6}}
+                columns = {{sm: 2, md: 4}}
+                sx={{
+                  justifyItems: "center",
+                  alignItems: "center",
+                }}
+          >
+            <Grid size={1}
+                  sx={{
+                    justifyItems: "center",
+                    alignItems: "center",
+                  }}
+            >
+              <IconHyperLink text={<p>Github</p>} href="https://github.com/joobumjin" icon={<GitHubIcon />} />
+            </Grid>
+            <Grid size={1}
+                  sx={{
+                    justifyItems: "center",
+                    alignItems: "center",
+                  }}
+            >
+              <IconHyperLink text={<p>LinkedIn</p>} href="https://www.linkedin.com/in/bumjin-joo/" icon={<LinkedInIcon />}/>
+            </Grid>
+            <Grid size={1}
+                  sx={{
+                    justifyItems: "center",
+                    alignItems: "center",
+                  }}
+            >
+              <IconHyperLink text={<p>Resume</p>} href="https://drive.google.com/file/d/1GAxWJjdiknoXumj8lszhXeW0Kbf0XgwE/view?usp=sharing" icon={<TextSnippetIcon />}/>
+            </Grid>
+            <Grid size={1}
+                  sx={{
+                    justifyItems: "center",
+                    alignItems: "center",
+                  }}
+            >
+              <IconHyperLink text={<p>Email</p>} href="mailto:bumjin.joo@gmail.com" icon={<EmailIcon />}/>
+            </Grid>
+          </Grid>
+        </Stack>
       </div>
 
       <h1 className={styles.sectionHeader}>experience</h1>
@@ -58,9 +110,8 @@ export default function Home() {
               <h4>Computer Vision</h4> <p>(Jan 2025 - May 2025)</p>
             </span>
             <ul>
-              <li>
-                asdf
-              </li>
+              <li> Extensively unit tested and play-tested assignments to improve assignment quality for users </li>
+              <li> Hosted live debugging and Q&A sessions for conceptual / coding questions during weekly office hours </li>
             </ul>
           </span>
 
@@ -76,7 +127,7 @@ export default function Home() {
                 prototyped new ViT assignment which used transformers for generative image captioning
               </li>
               <li>
-                introduced Beras: a manual reimplementation of Tensorflow & PyTorch auto-differentiation tools for deep, gradient optimization models
+                created and introduced Beras: a manual reimplementation of Tensorflow & PyTorch auto-differentiation tools for deep, gradient optimization models
               </li>
               <li>
                 helped students on topics including language modeling, transformers, GANs, and more
@@ -136,20 +187,20 @@ export default function Home() {
       <ProjTile
         name="GraphSC"
         ext={<Stack direction={{ xs: 'column', sm: 'row' }} alignItems="end" spacing={0}>
-                <a className={styles.button}><TextSnippetIcon/> <p>Report</p></a>
-                <a className={styles.button}><GitHubIcon/> <p>Github Link</p></a>
+                <ReportLink href="https://drive.google.com/file/u/1/d/1-m_HFV6-Dp_7ZMAOASNqEYBrU09KBUT2/view?usp=sharing"/>
+                <GithubProjLink href="https://github.com/joobumjin/GraphSC" />
              </Stack>}
       >
         <span className={styles.sub}>
-            <p>asdf</p>
-          </span>
+          <p>A graph-based approach to efficiently analyze stem cell imaging with state-of-the-art accuracy. Reduced training time from <b>days to just hours</b></p>
+        </span>
       </ProjTile>
 
       <ProjTile
         name="YogaSplat"
         ext={<Stack direction={{ xs: 'column', sm: 'row' }} alignItems="end" spacing={0}>
-                <a className={styles.button}><TextSnippetIcon/> <p>Report</p></a>
-                <a className={styles.button}><GitHubIcon/> <p>Github Link</p></a>
+                <ReportLink href="https://drive.google.com/file/d/15dR2u52O0wm3t0_ctjyrHtfP4D6_ozk1/view?usp=sharing" />
+                <GithubProjLink href="https://github.com/mindy-kim/3d-world-models"/>
              </Stack>}
       >
         <span className={styles.sub}>
@@ -161,11 +212,7 @@ export default function Home() {
         name="MAE Fine Tuning"
         ext={<Stack direction={{ xs: 'column', sm: 'row' }} alignItems="end" spacing={0}>
                 <a className={styles.button}><TextSnippetIcon/> <p>Report</p></a>
-                <a 
-                className={styles.button}
-                href="https://github.com/joobumjin/mae_cs2952x"
-                target="_blank"
-                ><GitHubIcon/> <p>Github Link</p></a>
+                <GithubProjLink href="https://github.com/joobumjin/mae_cs2952x"/>
              </Stack>}
       >
         <span className={styles.sub}>
@@ -182,8 +229,7 @@ export default function Home() {
       <ProjTile
         name="BertQA"
         ext={<Stack direction={{ xs: 'column', sm: 'row' }} alignItems="end" spacing={0}>
-                <a className={styles.button}><TextSnippetIcon/> <p>Report</p></a>
-                <a className={styles.button}><GitHubIcon/> <p>Github Link</p></a>
+                <DriveLink href="https://drive.google.com/drive/folders/1k2lMFOw1wFnflUApc26V-A7m1Kk2hrtG?usp=sharing"/>
              </Stack>}
       >
         <span className={styles.sub}>
@@ -194,17 +240,55 @@ export default function Home() {
       <h1 className={styles.sectionHeader}>community involvement</h1>
       
       <ProjTile
-        name="DAEBAK"
+        name="DAEBAK Dance Team"
         ext={<Stack direction={{ xs: 'column', sm: 'row' }} alignItems="end" spacing={0}>
-                <a className={styles.button}><TextSnippetIcon/> <p>Report</p></a>
                 <a className={styles.button} href="https://drive.google.com/drive/folders/1sDu__-1lZsyLlKTf1YJlNAE49XaZiFq9?usp=sharing" target="_blank">
                   <AddToDriveIcon/> <p>Google Drive Sample</p>
                 </a>
              </Stack>}
       >
         <span className={styles.sub}>
-            <p>asdf</p>
+          <span>
+            <h4>Vice Director</h4> <p>(Sept 2024 - May 2025)</p>
           </span>
+          <ul>
+            <li>
+              developed a real-time system of Google Sheets for our Performer Casting List, Performer Practice Availability Aggregation, and Audience Member Ticket Aggregation
+
+              <ul>
+                <li>
+                  <b>efficiently and automaticallly aggregated information</b> through spreadsheet manipulation techniques (Sheets Custom Functions, SQL, RegEx)
+                </li>
+
+                <li>
+                  A/B tested forms to encourage faster response times from members 
+                </li>
+
+                <li>
+                  <b>visualized aggregate availability</b> with custom filter rules into easily understood calendars
+                </li>
+
+                <li>
+                  <b>reduced leadership workload by weeks</b>
+                </li>
+              </ul>
+            </li>
+            <li>
+              Coordinated member availability to schedule and book spaces from Brown University campus 
+            </li>
+          </ul>
+        </span>
+
+        <span className={styles.sub}>
+          <span>
+            <h4>Performer, Teacher</h4> <p>(Sept 2021 - May 2025)</p>
+          </span>
+          <ul>
+            <li>
+              Hosted dance workshops to teach community members selected pieces of choreography
+            </li>
+          </ul>
+        </span>
       </ProjTile>
       
     </main>
