@@ -142,6 +142,7 @@
 
   .main {
     padding: 2rem;
+    width: 90%;
   }
 
   .content {
@@ -174,7 +175,7 @@
 /* @media (min-width: 0px) and (max-width: 1120px) {
   
 } */
-
+/* 
 @media (prefers-color-scheme: dark) {
   .vercelLogo {
     filter: invert(1);
@@ -192,4 +193,4 @@
   to {
     transform: rotate(0deg);
   }
-}
+} */

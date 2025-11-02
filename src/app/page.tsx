@@ -39,9 +39,9 @@ export default function Home() {
           </div>
 
           <Grid container
-                rowSpacing={{sm: 4, md: 6}}
-                columnSpacing={{sm: 0, md: 6}}
-                columns = {{sm: 2, md: 4}}
+                rowSpacing={{xs: 0, sm: 4, md: 6}}
+                columnSpacing={{xs:0, sm: 0, md: 6}}
+                columns = {{xs: 2, sm: 2, md: 4}}
                 sx={{
                   justifyContent: "center",
                   alignItems: "center",
