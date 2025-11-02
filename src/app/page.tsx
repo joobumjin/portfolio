@@ -1,14 +1,12 @@
-import Image from "next/image";
 import styles from "./page.module.css";
 import Stack from '@mui/material/Stack';
 import Grid from '@mui/material/Grid';
-import LaunchIcon from '@mui/icons-material/Launch';
 import AddToDriveIcon from '@mui/icons-material/AddToDrive';
 import TextSnippetIcon from '@mui/icons-material/TextSnippet';
 import EmailIcon from '@mui/icons-material/Email';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import GitHubIcon from '@mui/icons-material/GitHub';
-import {ExpTile, ProjTile, HyperLink, IconHyperLink, TextButtonLink, 
+import {ExpTile, ProjTile, HyperLink, IconHyperLink,  
   GithubProjLink, ReportLink, DriveLink} from './components/tiles'
 
 export default function Home() {
@@ -94,7 +92,7 @@ export default function Home() {
           <span className={styles.sub}>
             Currently exploring multimodal modeling techniques to predict pancreatic cancer patient survival outcomes and reaction to treatments.
 
-            Coordinating closely with medical faculty to incorporate visual pancreatomy slides, textual physicians' notes, and genomic mutation features.
+            Coordinating closely with medical faculty to incorporate visual pancreatomy slides, textual physicians&apos; notes, and genomic mutation features.
           </span>
         </ExpTile>
 
@@ -161,7 +159,7 @@ export default function Home() {
           date="July 2022 - July 2025"
         >
           <span className={styles.sub}>
-            Broadly explored deep learning models for medical analytics, building code to train and optimize models on Brown's High Performance Computing Cluster. 
+            Broadly explored deep learning models for medical analytics, building code to train and optimize models on Brown&apos;s High Performance Computing Cluster. 
             Previously contributed to developing prototypes of multimodal contrastive transformers.
             Developed my Senior Honors Thesis: GraphSC, An Exploration into and Analysis of Graph Networks in Stem Cell Colony Characterization.
           </span>
@@ -218,7 +216,7 @@ export default function Home() {
         <span className={styles.sub}>
           An exploration into the Self Supervised Learning properties of the ViT-based <HyperLink text={"Masked Autoencoder"} href="https://arxiv.org/abs/2111.06377"/>. 
           
-          ViTMAEs were pretrained to reconstruct unlabled, masked images and fine tuned by linear probing the encoder's embeddings on a classification task.
+          ViTMAEs were pretrained to reconstruct unlabled, masked images and fine tuned by linear probing the encoder&apos;s embeddings on a classification task.
 
           Ablation studies into training techniques like mean pooling encodings in lieu of directly accessing the classification encoding, linear probe intitialization, choice of optimizer, learning rate decay method, and batch normalization demonstrated the relevance or lack of impact from such techniques.
         </span>
