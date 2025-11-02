@@ -14,8 +14,8 @@ const opensans = Open_Sans({
 });
 
 export const metadata: Metadata = {
-  title: "bumjinjoo.com",
-  // description: "",
+  title: "bumjin | portfolio",
+  description: "Hi! I'm Bumjin, a master's student studying machine learning at Brown. Learn more about me, my experience, and my projects here!",
 };
 
 export default function RootLayout({
