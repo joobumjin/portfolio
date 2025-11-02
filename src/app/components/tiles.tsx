@@ -88,11 +88,9 @@ function HyperLink({
         target="_blank"
         className={tileStyles.hypertext}
       >
-        {/* <span style={{display: 'flex', flexDirection: 'row', alignItems: 'center', whiteSpace: 'initial'}}> */}
-          <Typography variant='inherit'>
-            {text} <LaunchIcon fontSize="inherit"/>
-          </Typography>
-        {/* </span> */}
+        <Typography variant='inherit'>
+          {text} <LaunchIcon fontSize="inherit"/>
+        </Typography>
       </a>
     </span>
   )
