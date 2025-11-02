@@ -85,24 +85,16 @@ export default function Home() {
 
       <h1 className={styles.sectionHeader}>experience</h1>
         <ExpTile 
-          org="Radiology AI Lab - Rhode Island Hospital"
+          org="Radiology AI Lab - RI Hospital"
           link="https://sites.brown.edu/airadiology/"
           loc="Providence, RI"
           position="Student Researcher"
           date="Oct 2025 - Present"
         >
           <span className={styles.sub}>
-            <span>
-              <h4>Graduate Deep Learning</h4> <p>(Sept 2025 - )</p>
-            </span>
-            <ul>
-              <li>
-                utilized GitHub Actions to automatically verify internal code functionality on every update
-              </li>
-              <li>
-                helped students with transformers, autoencoders, diffusion, and more!
-              </li>
-            </ul>
+            Currently exploring multimodal modeling techniques to predict pancreatic cancer patient survival outcomes and reaction to treatments.
+
+            Coordinating closely with medical faculty to incorporate visual pancreatomy slides, textual physicians' notes, and genomic mutation features.
           </span>
         </ExpTile>
 
@@ -169,17 +161,9 @@ export default function Home() {
           date="July 2022 - July 2025"
         >
           <span className={styles.sub}>
-            <span>
-              <h4>Graduate Deep Learning</h4> <p>(Sept 2025 - )</p>
-            </span>
-            <ul>
-              <li>
-                utilized GitHub Actions to automatically verify internal code functionality on every update
-              </li>
-              <li>
-                helped students with transformers, autoencoders, diffusion, and more!
-              </li>
-            </ul>
+            Broadly explored deep learning models for medical analytics, building code to train and optimize models on Brown's High Performance Computing Cluster. 
+            Previously contributed to developing prototypes of multimodal contrastive transformers.
+            Developed my Senior Honors Thesis: GraphSC, An Exploration into and Analysis of Graph Networks in Stem Cell Colony Characterization.
           </span>
         </ExpTile>
 
@@ -191,17 +175,8 @@ export default function Home() {
           date="July 2022 - July 2025"
         >
           <span className={styles.sub}>
-            <span>
-              <h4>Graduate Deep Learning</h4> <p>(Sept 2025 - )</p>
-            </span>
-            <ul>
-              <li>
-                utilized GitHub Actions to automatically verify internal code functionality on every update
-              </li>
-              <li>
-                helped students with transformers, autoencoders, diffusion, and more!
-              </li>
-            </ul>
+            Developed Multiple Instance Learning models to make patient survival predictions on gigapixel biopsy images. <HyperLink text="See paper here" href="https://www.sciencedirect.com/science/article/pii/S1535610822003178" />. 
+            Additionally trained GAN models to create high resolution biopsy samples to serve as artificial training data for rare cancers
           </span>
         </ExpTile>
 
@@ -313,7 +288,13 @@ export default function Home() {
               </ul>
             </li>
             <li>
-              Coordinated member availability to schedule and book spaces from Brown University campus 
+              Coordinated member availability to schedule practice and performance spaces from Brown University campus, averaging 8 hours of booked practice spaces per week 
+            </li>
+            <li>
+              Managed over 100 different performers in 30 unique pieces 
+            </li>
+            <li>
+              Flexibly adapted to diverse tasks as needed (Figma graphic design, social media management, performance media editing)
             </li>
           </ul>
         </span>
@@ -325,6 +306,12 @@ export default function Home() {
           <ul>
             <li>
               Hosted dance workshops to teach community members selected pieces of choreography
+            </li>
+            <li>
+              Performed at annual show case with over 800 audience members over 2 nights. <HyperLink text="Check it out here!" href="https://www.youtube.com/watch?v=XK6OhebFJ5k&list=PL5gZzQCnHAxHn6H6bmpQMIhFfGquDgnBo"/>
+            </li>
+            <li>
+              Designed stage lighting and animations for select pieces 
             </li>
           </ul>
         </span>

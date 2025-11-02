@@ -4,8 +4,9 @@ import GitHubIcon from '@mui/icons-material/GitHub';
 import AddToDriveIcon from '@mui/icons-material/AddToDrive';
 import TextSnippetIcon from '@mui/icons-material/TextSnippet';
 import Stack from '@mui/material/Stack';
+import Box from '@mui/material/Box';
+import Typography from '@mui/material/Typography';
 import React from "react";
-
 
 function ExpTile({
   org,
@@ -24,22 +25,22 @@ function ExpTile({
 }>) {
   return (
     <span className={tileStyles.tile}>
-      <Stack direction={{sm: 'column', md: 'row'}} justifyContent={{md: "space-between"}}>
+      <Stack direction={{md: 'column', lg: 'row'}} justifyContent={{md: "space-between"}}>
         <span className={tileStyles.title}>
-            <h2>
-              <HyperLink 
-                text={org}
-                href={link}
-              />
-            </h2>
+          <h2>
+            <HyperLink 
+              text={org}
+              href={link}
+            />
+          </h2>
 
           <h3>{position}</h3>
         </span>
         
-        <span className={tileStyles.info}>
+        <Box className={tileStyles.info} sx={{alignItems: {md: 'flex-start', lg: 'flex-end'}}}>
           <i>{loc}</i>
           <i>{date}</i>
-        </span>
+        </Box>
       </Stack>
 
       {children}
@@ -59,7 +60,7 @@ function ProjTile({
 }>) {
   return (
     <span className={tileStyles.tile}>
-      <span className={tileStyles.split}>
+      <Stack direction={{sm: 'column', md: 'row'}} alignItems="center" justifyContent={{md: "space-between"}}>
         <span className={tileStyles.title}>
             <h2>{name}</h2>
         </span>
@@ -67,7 +68,7 @@ function ProjTile({
         <span className={tileStyles.info}>
           {ext}
         </span>
-      </span>
+      </Stack>
       {children}
     </span>
   );
@@ -87,9 +88,11 @@ function HyperLink({
         target="_blank"
         className={tileStyles.hypertext}
       >
-        <span style={{display: 'flex', flexDirection: 'row', alignItems: 'center'}}>
-          {text} <LaunchIcon fontSize="inherit" sx={{marginLeft: '.25em'}}/>
-        </span>
+        {/* <span style={{display: 'flex', flexDirection: 'row', alignItems: 'center', whiteSpace: 'initial'}}> */}
+          <Typography variant='inherit'>
+            {text} <LaunchIcon fontSize="inherit"/>
+          </Typography>
+        {/* </span> */}
       </a>
     </span>
   )

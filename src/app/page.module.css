@@ -108,28 +108,8 @@
 .center {
   margin-top: 20vh;
   margin-bottom: 5vh; 
-}
-
-.center::before {
-  border-radius: 50%;
-  width: 300px;
-  height: 200px;
-  margin-left: -510px;
-}
-
-.center::after {
-  width: 300px;
-  height: 200px;
-  z-index: -1;
-}
-
-.center::before,
-.center::after {
-  content: "";
-  left: 50%;
-  position: absolute;
-  filter: blur(45px);
-  transform: translateZ(0);
+  width: 80%;
+  min-width: 30rem;
 }
 
 @media (prefers-reduced-motion) {
@@ -172,16 +152,6 @@
     grid-template-columns: 1fr;
     max-width: 320px;
     text-align: center;
-  }
-
-
-  .center {
-    padding: 3rem 0 6rem;
-  }
-
-  .center::before {
-    transform: none;
-    height: 300px;
   }
 
   .description {
