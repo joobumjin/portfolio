@@ -71,7 +71,7 @@ export default function Home() {
           loc="Providence, RI"
           position="Student Researcher"
           date="Oct 2025 - Present"
-          skills= {["PyTorch", "Hugging Face Transformers", "Python", "Git", "Slurm"]}
+          skills= {["PyTorch", "HuggingFace", "Python", "Git", "Slurm"]}
         >
           <span className={styles.sub}>
             Currently exploring multimodal modeling techniques to predict pancreatic cancer patient survival outcomes and reaction to treatments.
@@ -157,7 +157,7 @@ export default function Home() {
           loc="Cambridge, MA"
           position="Student Researcher"
           date="July 2022 - July 2025"
-          skills= {["PyTorch", "Jupyter", "pandas", "scikit-learn", "matplotlib"]}
+          skills= {["PyTorch", "Jupyter", "pandas", "sklearn", "matplotlib"]}
         >
           <span className={styles.sub}>
             Developed Multiple Instance Learning models to make patient survival predictions on gigapixel biopsy images. <HyperLink text="See paper here" href="https://www.sciencedirect.com/science/article/pii/S1535610822003178" />. 

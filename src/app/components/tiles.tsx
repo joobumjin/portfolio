@@ -5,6 +5,7 @@ import AddToDriveIcon from '@mui/icons-material/AddToDrive';
 import TextSnippetIcon from '@mui/icons-material/TextSnippet';
 import Stack from '@mui/material/Stack';
 import Box from '@mui/material/Box';
+import Grid from '@mui/material/Grid';
 import Typography from '@mui/material/Typography';
 import React from "react";
 
@@ -14,11 +15,13 @@ function SkillBox({
   skills: string[]
 }>) {
   return (
-    <Box className={tileStyles.skillBox}>
+    <Grid container spacing={2} className={tileStyles.skillBox}>
       {skills.map((skill, index) => (
-          <p key={index}> {skill} </p>
+          <Grid key={index} size="auto">
+            <p> {skill} </p>
+          </Grid>
         ))}
-    </Box>
+    </Grid>
   )
 }
 
