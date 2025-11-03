@@ -71,6 +71,7 @@ export default function Home() {
           loc="Providence, RI"
           position="Student Researcher"
           date="Oct 2025 - Present"
+          skills= {["PyTorch", "Hugging Face Transformers", "Python", "Git", "Slurm"]}
         >
           <span className={styles.sub}>
             Currently exploring multimodal modeling techniques to predict pancreatic cancer patient survival outcomes and reaction to treatments.
@@ -85,6 +86,7 @@ export default function Home() {
           loc="Providence, RI"
           position="Course Dev, Teaching Assistant"
           date="May 2022 - Present"
+          skills= {["Tensorflow", "PyTorch", "Keras", "NumPy", "Jupyter", "Colab", "Pandas", "Git", "Bash"]}
         >
           <span className={styles.sub}>
             <span>
@@ -140,6 +142,7 @@ export default function Home() {
           loc="Providence, RI"
           position="Student Researcher"
           date="July 2022 - July 2025"
+          skills= {["PyTorch", "Jupyter", "Colab", "Optuna", "Git", "matplotlib", "Slurm", "Bash", "Docker"]}
         >
           <span className={styles.sub}>
             Broadly explored deep learning models for medical analytics, building code to train and optimize models on Brown&apos;s High Performance Computing Cluster. 
@@ -154,6 +157,7 @@ export default function Home() {
           loc="Cambridge, MA"
           position="Student Researcher"
           date="July 2022 - July 2025"
+          skills= {["PyTorch", "Jupyter", "pandas", "scikit-learn", "matplotlib"]}
         >
           <span className={styles.sub}>
             Developed Multiple Instance Learning models to make patient survival predictions on gigapixel biopsy images. <HyperLink text="See paper here" href="https://www.sciencedirect.com/science/article/pii/S1535610822003178" />. 
@@ -168,6 +172,7 @@ export default function Home() {
                 <ReportLink href="https://drive.google.com/file/u/1/d/1-m_HFV6-Dp_7ZMAOASNqEYBrU09KBUT2/view?usp=sharing"/>
                 <GithubProjLink href="https://github.com/joobumjin/GraphSC" />
              </Stack>}
+        skills = {["PyTorch", "Weights&Biases", "Jupyter", "Pandas", "matplotlib", "Seaborn", "Bash", "Slurm"]}
       >
         <span className={styles.sub}>
           A mutlitaksing graph-based approach to automated stem cell characterization from microscope imaging with <b>a reduction in average squared error of over 50%</b> in each of 3 target variables when compared to previous state of the art models and modern ViT & Foundation Modeling-based approaches. 
@@ -182,6 +187,7 @@ export default function Home() {
                 <ReportLink href="https://drive.google.com/file/d/15dR2u52O0wm3t0_ctjyrHtfP4D6_ozk1/view?usp=sharing" />
                 <GithubProjLink href="https://github.com/mindy-kim/3d-world-models"/>
              </Stack>}
+        skills = {["PyTorch", "NumPy", "Jupyter", "Pandas", "matplotlib", "Bash", "Slurm"]}
       >
         <span className={styles.sub}>
           A fast, action-conditioned novel-view generator for pre-existing videos, exploring extensions of 4D Gaussian Splats (4DGS). 
@@ -192,9 +198,9 @@ export default function Home() {
       <ProjTile
         name="MAE Fine Tuning"
         ext={<Stack direction={{ xs: 'column', sm: 'row' }} alignItems={{xs: "center", sm: "end"}} spacing={0}>
-                <a className={styles.button}><TextSnippetIcon/> <p>Report</p></a>
                 <GithubProjLink href="https://github.com/joobumjin/mae_cs2952x"/>
              </Stack>}
+        skills = {["Pytorch", "Torch Distributed", "Weights&Biases", "Seaborn"]}
       >
         <span className={styles.sub}>
           An exploration into the Self Supervised Learning properties of the ViT-based <HyperLink text={"Masked Autoencoder"} href="https://arxiv.org/abs/2111.06377"/>. 
@@ -211,6 +217,7 @@ export default function Home() {
                 <ReportLink href="https://drive.google.com/file/d/16F2uisOPw3CV3Uyaqv39zMeTMSRBynEF/view?usp=sharing"/>
                 <DriveLink href="https://drive.google.com/drive/folders/1k2lMFOw1wFnflUApc26V-A7m1Kk2hrtG?usp=sharing"/>
              </Stack>}
+        skills = {["Python", "Colab", "PyTorch", "NumPy", "matplotlib"]}
       >
         <span className={styles.sub}>
           A from-scratch language model for converting images of math formulas to their associated LaTeX code. 
@@ -225,6 +232,7 @@ export default function Home() {
         ext={<Stack direction={{ xs: 'column', sm: 'row' }} alignItems={{xs: "center", sm: "end"}} spacing={0}>
                 <DriveLink href="https://drive.google.com/drive/folders/1k2lMFOw1wFnflUApc26V-A7m1Kk2hrtG?usp=sharing"/>
              </Stack>}
+        skills = {["Python", "Google Cloud Platform (GCP)", "PyTorch", "HuggingFace", "NumPy", "NLTK"]}
       >
         <span className={styles.sub}>
           A repurposed autoregressive language model trained to highlight answers to questions in a body of text. 
@@ -241,6 +249,7 @@ export default function Home() {
                   <AddToDriveIcon/> <p>Google Drive Sample</p>
                 </a>
              </Stack>}
+        skills = {["Google Sheets", "SQL", "RegEx", "Google Forms", "Figma"]}
       >
         <span className={styles.sub}>
           <span>

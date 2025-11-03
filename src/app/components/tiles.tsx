@@ -8,12 +8,27 @@ import Box from '@mui/material/Box';
 import Typography from '@mui/material/Typography';
 import React from "react";
 
+function SkillBox({
+  skills,
+}: Readonly<{
+  skills: string[]
+}>) {
+  return (
+    <Box className={tileStyles.skillBox}>
+      {skills.map((skill, index) => (
+          <p key={index}> {skill} </p>
+        ))}
+    </Box>
+  )
+}
+
 function ExpTile({
   org,
   link,
   loc,
   position,
   date,
+  skills,
   children,
 }: Readonly<{
   org: string;
@@ -21,6 +36,7 @@ function ExpTile({
   loc: string;
   position: string;
   date: string;
+  skills: string[];
   children: React.ReactNode;
 }>) {
   return (
@@ -45,6 +61,7 @@ function ExpTile({
 
       {children}
 
+      <SkillBox skills={skills} />
     </span>
   );
 }
@@ -52,10 +69,12 @@ function ExpTile({
 function ProjTile({
   name,
   ext,
+  skills,
   children,
 }: Readonly<{
   name: string;
   ext: React.ReactNode;
+  skills: string[];
   children: React.ReactNode;
 }>) {
   return (
@@ -70,6 +89,8 @@ function ProjTile({
         </span>
       </Stack>
       {children}
+
+      <SkillBox skills={skills} />
     </span>
   );
 }
