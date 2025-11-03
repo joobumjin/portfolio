@@ -71,7 +71,7 @@ export default function Home() {
           loc="Providence, RI"
           position="Student Researcher"
           date="Oct 2025 - Present"
-          skills= {["PyTorch", "HuggingFace", "Python", "Git", "Slurm"]}
+          skills= {["PyTorch", "Hugging Face", "Python", "Git", "Slurm"]}
         >
           <span className={styles.sub}>
             Currently exploring multimodal modeling techniques to predict pancreatic cancer patient survival outcomes and reaction to treatments.
@@ -172,7 +172,7 @@ export default function Home() {
                 <ReportLink href="https://drive.google.com/file/u/1/d/1-m_HFV6-Dp_7ZMAOASNqEYBrU09KBUT2/view?usp=sharing"/>
                 <GithubProjLink href="https://github.com/joobumjin/GraphSC" />
              </Stack>}
-        skills = {["PyTorch", "Weights&Biases", "Jupyter", "Pandas", "matplotlib", "Seaborn", "Bash", "Slurm"]}
+        skills = {["PyTorch", "Weights & Biases", "Jupyter", "Pandas", "matplotlib", "Seaborn", "Bash", "Slurm"]}
       >
         <span className={styles.sub}>
           A mutlitaksing graph-based approach to automated stem cell characterization from microscope imaging with <b>a reduction in average squared error of over 50%</b> in each of 3 target variables when compared to previous state of the art models and modern ViT & Foundation Modeling-based approaches. 
@@ -200,7 +200,7 @@ export default function Home() {
         ext={<Stack direction={{ xs: 'column', sm: 'row' }} alignItems={{xs: "center", sm: "end"}} spacing={0}>
                 <GithubProjLink href="https://github.com/joobumjin/mae_cs2952x"/>
              </Stack>}
-        skills = {["Pytorch", "Torch Distributed", "Weights&Biases", "Seaborn"]}
+        skills = {["Pytorch", "Torch Distributed", "Weights & Biases", "Hugging Face"]}
       >
         <span className={styles.sub}>
           An exploration into the Self Supervised Learning properties of the ViT-based <HyperLink text={"Masked Autoencoder"} href="https://arxiv.org/abs/2111.06377"/>. 
@@ -232,7 +232,7 @@ export default function Home() {
         ext={<Stack direction={{ xs: 'column', sm: 'row' }} alignItems={{xs: "center", sm: "end"}} spacing={0}>
                 <DriveLink href="https://drive.google.com/drive/folders/1k2lMFOw1wFnflUApc26V-A7m1Kk2hrtG?usp=sharing"/>
              </Stack>}
-        skills = {["Python", "Google Cloud Platform (GCP)", "PyTorch", "HuggingFace", "NumPy", "NLTK"]}
+        skills = {["Python", "Google Cloud Platform", "PyTorch", "Hugging Face", "NumPy", "NLTK"]}
       >
         <span className={styles.sub}>
           A repurposed autoregressive language model trained to highlight answers to questions in a body of text. 
