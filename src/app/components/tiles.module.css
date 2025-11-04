@@ -76,7 +76,7 @@
     width: 0%; 
     height: 2px;
     right: 0;
-    background: #fff;
+    background: rgb(var(--foreground-rgb));
     transition: .2s ease-in-out;
 }    
 
