@@ -12,9 +12,9 @@ import {ExpTile, ProjTile, HyperLink, IconHyperLink,
 export default function Home() {
   return (
     <main className={styles.main}>
-      <div className={styles.description}>
+      {/* <div className={styles.description}>
         <p>Bumjin Joo</p>
-      </div>
+      </div> */}
 
       <div className={styles.center}>
         <Stack direction = 'column'

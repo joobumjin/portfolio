@@ -7,10 +7,6 @@
     flex-direction: column;
     align-items: center;
     align-self: center;
-}
-
-.inner {
-    width: 100%;
     max-width: var(--outer-elt-max-width);
     padding: 1rem;
     display: flex;
@@ -18,31 +14,12 @@
     font-family: var(--font-opensans);
 }
 
-.inner b {
+.footer b {
     font-size: 1.5rem;
-}
-
-.lastline {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-}
-
-.lastline p {
-    align-items: center;
-    width: auto;
 }
 
 @media (max-width: 700px) {
     .footer {
         padding: 0;
-    }
-    .inner b {
-        padding-bottom: .75rem;
-        text-align: center;
-    }
-    .lastline {
-        flex-direction: column;
-        align-items: center;
     }
 }
