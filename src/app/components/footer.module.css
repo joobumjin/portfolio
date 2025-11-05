@@ -7,14 +7,14 @@
     flex-direction: column;
     align-items: center;
     align-self: center;
-    max-width: var(--outer-elt-max-width);
-    padding: 1rem;
-    display: flex;
-    flex-direction: column;
-    font-family: var(--font-opensans);
 }
 
-.footer b {
+.inner {
+    width: 100%;
+    max-width: var(--outer-elt-max-width);
+}
+
+.inner b {
     font-size: 1.5rem;
 }
 

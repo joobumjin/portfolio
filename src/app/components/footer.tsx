@@ -13,6 +13,7 @@ export default function Footer() {
             <Stack direction={{sm: "column", md: "row"}} 
                     alignItems={{sm: "center", md: "flex-end"}} 
                     justifyContent={{sm: "center", md: "space-between"}}
+                    className={footerStyles.inner}
             >
                 <Stack direction="column" alignItems={{sm: "center", md: "flex-start"}}>
                     <b>thanks for visiting my portfolio</b>
