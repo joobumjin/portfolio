@@ -200,14 +200,16 @@ export default function Home() {
         ext={<Stack direction={{ xs: 'column', sm: 'row' }} alignItems={{xs: "center", sm: "end"}} spacing={0}>
                 <GithubProjLink href="https://github.com/joobumjin/mae_cs2952x"/>
              </Stack>}
-        skills = {["Pytorch", "Torch Distributed", "Weights & Biases", "Hugging Face"]}
+        skills = {["Pytorch", "Torch Distributed", "Weights & Biases", "Hugging Face", "Slurm"]}
       >
         <span className={styles.sub}>
           An exploration into the Self Supervised Learning properties of the ViT-based <HyperLink text={"Masked Autoencoder"} href="https://arxiv.org/abs/2111.06377"/>. 
+
+          This project partially reused model code, but also relied on manual rebuilds of the training regimes and Distributed Data Parallel system to ensure compatibility with Brown Oscar CCV computing and the associated Slurm batch requests.
           
           ViTMAEs were pretrained to reconstruct unlabled, masked images and fine tuned by linear probing the encoder&apos;s embeddings on a classification task.
 
-          Ablation studies into training techniques like mean pooling encodings in lieu of directly accessing the classification encoding, linear probe intitialization, choice of optimizer, learning rate decay method, and batch normalization demonstrated the relevance or lack of impact from such techniques.
+          Ablation studies into optimization techniques like mean pooling encodings instead of using classification encodings, linear probe intitialization, choice of optimizer, learning rate decay method, and batch normalization demonstrated the relevance or lack of impact from such techniques in achieving optimal performance.
         </span>
       </ProjTile>
 
