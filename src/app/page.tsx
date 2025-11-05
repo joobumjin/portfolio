@@ -209,7 +209,7 @@ export default function Home() {
           
           ViTMAEs were pretrained to reconstruct unlabled, masked images and fine tuned by linear probing the encoder&apos;s embeddings on a classification task.
 
-          Ablation studies into optimization techniques like mean pooling encodings instead of using classification encodings, linear probe intitialization, choice of optimizer, learning rate decay method, and batch normalization demonstrated the relevance or lack of impact from such techniques in achieving optimal performance.
+          Ablation studies into optimization techniques like using mean pooling encodings instead of classification encodings, linear probe intitialization, choice of optimizer, learning rate decay method, and batch normalization demonstrated the relevance or lack of impact from such techniques in achieving optimal performance.
         </span>
       </ProjTile>
 
