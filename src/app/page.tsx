@@ -205,7 +205,7 @@ export default function Home() {
         <span className={styles.sub}>
           An exploration into the Self Supervised Learning properties of the ViT-based <HyperLink text={"Masked Autoencoder"} href="https://arxiv.org/abs/2111.06377"/>. 
 
-          This project partially reused model code, but also relied on manual rebuilds of the training regimes and Distributed Data Parallel system to ensure compatibility with Brown Oscar CCV computing and the associated Slurm batch requests.
+          This project partially reused model code, but also relied on manual rebuilds of the training regimes and <b>Distributed Data Parallel</b> to ensure compatibility with Brown Oscar CCV while <b>reducing training time by over 30%</b>.
           
           ViTMAEs were pretrained to reconstruct unlabled, masked images and fine tuned by linear probing the encoder&apos;s embeddings on a classification task.
 

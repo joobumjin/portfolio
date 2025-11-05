@@ -16,7 +16,7 @@ function SkillBox({
   return (
     <Box className={tileStyles.skillBox}>
       {skills.map((skill, index) => (
-          <p key={index}> {skill} </p>
+          <p className={tileStyles.skill} key={index}> {skill} </p>
         ))}
     </Box>
   )
