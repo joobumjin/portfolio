@@ -55,7 +55,7 @@ export default function Home() {
               <IconHyperLink text={<p>LinkedIn</p>} href="https://www.linkedin.com/in/bumjin-joo/" icon={<LinkedInIcon />}/>
             </Grid>
             <Grid size={1} display="flex" justifyContent="center">
-              <IconHyperLink text={<p>Resume</p>} href="https://drive.google.com/file/d/1GAxWJjdiknoXumj8lszhXeW0Kbf0XgwE/view?usp=sharing" icon={<TextSnippetIcon />}/>
+              <IconHyperLink text={<p>Resume</p>} href="https://drive.google.com/file/d/1lbQ0Nmp-1Yn8sgA6O8ldikRf6SM3zQBw/view?usp=sharing" icon={<TextSnippetIcon />}/>
             </Grid>
             <Grid size={1} display="flex" justifyContent="center">
               <IconHyperLink text={<p>Email</p>} href="mailto:bumjin.joo@gmail.com" icon={<EmailIcon />}/>
