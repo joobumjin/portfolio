@@ -74,9 +74,24 @@ export default function Home() {
           skills= {["PyTorch", "Hugging Face", "Python", "Git", "Slurm"]}
         >
           <span className={styles.sub}>
-            Currently exploring multimodal modeling techniques to predict pancreatic cancer patient survival outcomes and reaction to treatments.
+            Currently exploring foundation modeling to predict pancreatic cancer patient survival outcomes and reaction to treatments.
 
             Coordinating closely with medical faculty to incorporate visual pancreatomy slides, textual physicians&apos; notes, and genomic mutation features.
+          </span>
+        </ExpTile>
+
+        <ExpTile 
+          org="KL Divergence"
+          link="https://www.klconvergence.com/"
+          loc="Remote"
+          position="Machine Learning Engineer"
+          date="Dec 2025 - Present"
+          skills= {["PyTorch", "Hugging Face", "Python", "Git"]}
+        >
+          <span className={styles.sub}>
+            Designing and deploying tailored AI models to automate complex manual business workflows.
+            
+            Optimizing models for local compute environments, ensuring high fidelity performance without cloud
           </span>
         </ExpTile>
 
@@ -99,6 +114,9 @@ export default function Home() {
               <li>
                 helped students with transformers, autoencoders, diffusion, and more!
               </li>
+              <li>
+                prototyped future extensions of coursework including lessons into distributed training (DDP, FSDP) and computation parallelization (CUDA, Triton)
+              </li>
             </ul>
           </span>  
             
@@ -107,8 +125,8 @@ export default function Home() {
               <h4>Computer Vision</h4> <p>(Jan 2025 - May 2025)</p>
             </span>
             <ul>
-              <li> Extensively unit tested and play-tested assignments to improve assignment quality for users </li>
-              <li> Hosted live debugging and Q&A sessions for conceptual / coding questions during weekly office hours </li>
+              <li> ran extensive unit and system tests on assignments to improve assignment quality for users </li>
+              <li> hosted live debugging and Q&A sessions for conceptual / coding questions during weekly office hours </li>
             </ul>
           </span>
 

@@ -110,7 +110,7 @@ function HyperLink({
         className={tileStyles.hypertext}
       >
         <Typography variant='inherit'>
-          {text} <LaunchIcon fontSize="inherit"/>
+          {text} <LaunchIcon fontSize="inherit" style={{verticalAlign: '-.1em'}}/>
         </Typography>
       </a>
     </span>
