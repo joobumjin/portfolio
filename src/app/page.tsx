@@ -86,7 +86,7 @@ export default function Home() {
           loc="Remote"
           position="Machine Learning Engineer"
           date="Dec 2025 - Present"
-          skills= {["PyTorch", "Hugging Face", "Python", "Git"]}
+          skills= {["PyTorch", "Hugging Face", "Pandas", "Git"]}
         >
           <span className={styles.sub}>
             Designing and deploying tailored AI models to automate complex manual business workflows.
