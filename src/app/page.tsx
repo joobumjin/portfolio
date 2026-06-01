@@ -91,7 +91,7 @@ export default function Home() {
           <span className={styles.sub}>
             Designing and deploying tailored AI models to automate complex manual business workflows.
             
-            Optimizing models for local compute environments, ensuring high fidelity performance without cloud
+            Optimizing models for local compute environments, ensuring high fidelity performance without cloud reliance.
           </span>
         </ExpTile>
 
@@ -100,7 +100,7 @@ export default function Home() {
           link="https://cs.brown.edu/"
           loc="Providence, RI"
           position="Course Dev, Teaching Assistant"
-          date="May 2022 - Present"
+          date="May 2022 - May 2026"
           skills= {["Tensorflow", "PyTorch", "Keras", "NumPy", "Jupyter", "Colab", "Pandas", "Git", "Bash"]}
         >
           <span className={styles.sub}>
