@@ -74,24 +74,28 @@ export default function Home() {
           skills= {["PyTorch", "Hugging Face", "Python", "Git", "Slurm"]}
         >
           <span className={styles.sub}>
-            Currently exploring foundation modeling to predict pancreatic cancer patient survival outcomes and reaction to treatments.
+            Exploring latent space adaptation on generalist LLMs to predict pancreatic cancer patient survival outcomes and reaction to treatments.
 
-            Coordinating closely with medical faculty to incorporate visual pancreatomy slides, textual physicians&apos; notes, and genomic mutation features.
+            Coordinating closely with medical faculty to incorporate textual radiologists&apos; and pathologists&apos; notes, and genomic mutation features.
+
+            Utilizing Mixed Precision, Memory Offloading, and Feature Store techniques to train on and retain very large datasets.
           </span>
         </ExpTile>
 
         <ExpTile 
-          org="KL Divergence"
+          org="KL Convergence"
           link="https://www.klconvergence.com/"
           loc="Remote"
           position="Machine Learning Engineer"
           date="Dec 2025 - Present"
-          skills= {["PyTorch", "Hugging Face", "Pandas", "Git"]}
+          skills= {["PyTorch", "Hugging Face", "Pandas", "Git", "vLLM", "uv", "AWS EC2"]}
         >
           <span className={styles.sub}>
             Designing and deploying tailored AI models to automate complex manual business workflows.
             
             Optimizing models for local compute environments, ensuring high fidelity performance without cloud reliance.
+
+            Specifically integrating open weight LLMs like Gemma4 with novel latent modalities for fast and high quality text generations.
           </span>
         </ExpTile>
 
